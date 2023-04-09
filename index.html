@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+ <html>
+<head>
+        
+        <title>Image Gallery</title>
+        <link rel="icon" href="images/images-solid.svg" type="image/gif/png">
+        <link rel="stylesheet" href="index.css">
+        <script src="https://kit.fontawesome.com/141322c150.js" crossorigin="anonymous"></script>
+        
+
+</head>
+<body>
+    
+    <div class="hero">
+        <nav>
+            <ul class="nav">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a class="active5" href="lighthome.html">Light mode</a></li>
+                
+            </ul>
+        </nav>
+        <h1 class="title">Palmiri za 70. rojstni dan</h1>
+
+    </div>
+    <div class="full-img" id="fullImgBox">
+        <img src="images/slika1.jpg" id="fullImg">
+        <span onclick="closeFullImg()">X</span>
+        <a href="images/slika1.jpg" id="demo"  download class="download-btn">Prenesi</a>
+        
+        
+    </div>
+    
+
+    <div class="img-gallery" >
+        <img class="slika1" src="images/slika1.jpg" onclick="openFullImg(this.src)">
+        <img class="slika2" src="images/slika2.jpg"onclick="openFullImg(this.src)">
+        <img class="slika3" src="images/slika3.jpg"onclick="openFullImg(this.src)">
+        <img class="slika4" src="images/slika4.jpg"onclick="openFullImg(this.src)">
+        <img class="slika5" src="images/slika5.jpg"onclick="openFullImg(this.src)">
+        <img class="slika6" src="images/slika6.jpg"onclick="openFullImg(this.src)">
+        <img class="slika7" src="images/slika7.jpg"onclick="openFullImg(this.src)">
+        <img class="slika8" src="images/slika8.jpg"onclick="openFullImg(this.src)">
+        <img class="slika9" src="images/slika9.jpg"onclick="openFullImg(this.src)">
+        <img class="slika10" src="images/slika10.jpg"onclick="openFullImg(this.src)">
+        <img class="slika11" src="images/slika11.jpg"onclick="openFullImg(this.src)">
+        <img class="slika12" src="images/slika12.jpg"onclick="openFullImg(this.src)">
+        <img class="slika13" src="images/slika13.jpg"onclick="openFullImg(this.src)">
+        <img class="slika14" src="images/slika14.jpg"onclick="openFullImg(this.src)">
+        <img class="slika15" src="images/slika15.jpg"onclick="openFullImg(this.src)">
+        <img class="slika16" src="images/slika16.jpg"onclick="openFullImg(this.src)">
+        <img class="slika17" src="images/slika17.jpg"onclick="openFullImg(this.src)">
+        <img class="slika18" src="images/slika18.jpg"onclick="openFullImg(this.src)">
+        <img class="slika19" src="images/slika19.jpg"onclick="openFullImg(this.src)">
+        <img class="slika20" src="images/slika20.jpg"onclick="openFullImg(this.src)">
+        <img class="slika21" src="images/slika21.jpg"onclick="openFullImg(this.src)">
+        <img class="slika22" src="images/slika22.jpg"onclick="openFullImg(this.src)">
+        <img class="slika23" src="images/slika23.jpg"onclick="openFullImg(this.src)">
+        <img class="slika24" src="images/slika24.jpg"onclick="openFullImg(this.src)">
+        <img class="slika25" src="images/slika25.jpg"onclick="openFullImg(this.src)">
+        <img class="slika26" src="images/slika26.jpg"onclick="openFullImg(this.src)">
+        <img class="slika27" src="images/slika27.jpg"onclick="openFullImg(this.src)">
+        <img class="slika28" src="images/slika28.jpg"onclick="openFullImg(this.src)">
+        <img class="slika29" src="images/slika29.jpg"onclick="openFullImg(this.src)">
+        <img class="slika30" src="images/slika30.jpg"onclick="openFullImg(this.src)">
+        <img class="slika31" src="images/slika31.jpg"onclick="openFullImg(this.src)">
+        <img class="slika32" src="images/slika32.jpg"onclick="openFullImg(this.src)">
+        <img class="slika33" src="images/slika33.jpg"onclick="openFullImg(this.src)">
+        <img class="slika34" src="images/slika34.jpg"onclick="openFullImg(this.src)">
+        <img class="slika35" src="images/slika35.jpg"onclick="openFullImg(this.src)">
+        <img class="slika36" src="images/slika36.jpg"onclick="openFullImg(this.src)">
+        <img class="slika37" src="images/slika37.jpg"onclick="openFullImg(this.src)">
+        <img class="slika38" src="images/slika38.jpg"onclick="openFullImg(this.src)">
+        <img class="slika39" src="images/slika39.jpg"onclick="openFullImg(this.src)">
+        <img class="slika40" src="images/slika40.jpg"onclick="openFullImg(this.src)">
+        <img class="slika41" src="images/slika41.jpg"onclick="openFullImg(this.src)">
+        <img class="slika42" src="images/slika42.jpg"onclick="openFullImg(this.src)">
+        <img class="slika43" src="images/slika43.jpg"onclick="openFullImg(this.src)">
+        <img class="slika44" src="images/slika44.jpg"onclick="openFullImg(this.src)">
+        <img class="slika45" src="images/slika45.jpg"onclick="openFullImg(this.src)">
+        <img class="slika46" src="images/slika46.jpg"onclick="openFullImg(this.src)">
+        <img class="slika47" src="images/slika47.jpg"onclick="openFullImg(this.src)">
+        <img class="slika48" src="images/slika48.jpg"onclick="openFullImg(this.src)">
+        <img class="slika49" src="images/slika49.jpg"onclick="openFullImg(this.src)">
+        <img class="slika50" src="images/slika50.jpg"onclick="openFullImg(this.src)">
+        <img class="slika51" src="images/slika51.jpg"onclick="openFullImg(this.src)">
+
+    </div>
+
+    <script>
+        var fullImgBox=document.getElementById("fullImgBox");
+        var fullImg=document.getElementById("fullImg");
+        
+        let text = "http://127.0.0.1:5503/Image-Galery/images/slika1.jpg";
+        var tab = new Array (5)
+        tab=text.split("/");
+        console.table(tab);
+        console.log(tab[tab.length-2]+"/"+tab[tab.length-1]);
+        var demo=document.getElementById("demo");
+        
+
+        
+    function openFullImg(pic){
+        let text = pic;
+        var tab = new Array (5)
+        tab=text.split("/");
+        console.table(tab);
+        console.log(tab[tab.length-2]+"/"+tab[tab.length-1]);
+        fullImgBox.style.display="flex";
+        fullImg.src=pic;
+        demo.href=pic;
+        
+        
+        
+    }
+        function closeFullImg(){
+        fullImgBox.style.display="none";
+    }
+    
+    
+    </script>
+
+
+    <h1 class="title2">About us</h1>
+        <div class="pppp">
+            
+            <p class="text"><img class="slikaa" src="images/hobotnica.jpg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac est ac mi vulputate varius. Proin quis sem lectus. 
+                Proin vitae dolor dui. Cras quis sem cursus, maximus sem at, sollicitudin magna. In purus elit, placerat eget sem non, 
+                lacinia gravida ex. Quisque pellentesque sodales massa et facilisis. Nulla facilisi. Aenean consectetur, lacus a tempus consequat,
+                 nunc nisi rutrum odio, laoreet iaculis augue mi in arcu. Aenean rhoncus, tortor sagittis fringilla vestibulum, metus eros lacinia quam, et 
+                 vehicula eros odio in velit. Vestibulum accumsan magna est, eu porttitor purus facilisis at. Aenean viverra, nulla nec euismod lacinia, nulla 
+                 magna placerat leo, et eleifend dolor arcu non sapien. 
+            </p>
+        </div>
+
+
+
+        <h1 class="title3">Contact</h1>
+
+        <div class="hero2">
+            <form>
+                <div class="input-group">
+                 <input type="text" id="name" required>
+                 <label for="name"><i class="fa-solid fa-user"></i> Your Name</label>
+                </div> 
+     
+                <div class="input-group">
+                 <input type="text" id="number" required>
+                 <label for="number"><i class="fa-solid fa-phone"></i> Phone Number</label>
+                </div> 
+     
+                <div class="input-group">
+                 <input  type="text" id="email" required>
+                 <label  for="email"><i class="fa-solid fa-envelope"></i> Email </label>
+                </div> 
+     
+                <div class="input-group">
+                 <textarea id="massage" rows="8" required></textarea>
+                 <label for="massage"><i class="fa-solid fa-message"></i> Your Massage</label>
+                </div> 
+                <button type="submit">SUBMIT <i class="fa-solid fa-paper-plane"></i></button>
+             </form> 
+    
+        </div>
+
+
+
+    <footer>
+        <h1>contact<h1>
+            
+           <p><a class="contact" href="luka.radojevic25@gmail.com">Gmail: luka.radojevic25@gmail.com</a></p>
+           <p><a class="contact" href="luka.radojevic25@gmail.com">phone: 064 277 885</a>
+    </footer>
+
+
+</body>
+</html> 
